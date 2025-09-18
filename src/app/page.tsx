@@ -1,5 +1,6 @@
 "use client";
 
+import FloatingButton from "@/components/FloatingButton";
 import ImageCard from "@/components/ImageCard";
 
 // sample data
@@ -90,6 +91,7 @@ export default function Home() {
           ))}
         </div>
       </main>
+      <FloatingButton />
     </div>
   );
 }

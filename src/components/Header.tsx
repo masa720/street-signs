@@ -55,11 +55,11 @@ const Header = () => {
         StreetSigns
       </Link>
       <div className="relative z-50">
-        <NavigationMenu viewport={false}>
+        <NavigationMenu viewport={false} className="overflow-visible">
           <NavigationMenuList>
             <NavigationMenuItem>
               <NavigationMenuTrigger>Home</NavigationMenuTrigger>
-              <NavigationMenuContent>
+              <NavigationMenuContent className="left-auto right-0 origin-top-right">
                 <ul className="grid gap-2 md:w-[400px] lg:w-[500px] lg:grid-cols-[.75fr_1fr]">
                   <li className="row-span-3">
                     <NavigationMenuLink asChild>
@@ -94,7 +94,7 @@ const Header = () => {
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuTrigger>Components</NavigationMenuTrigger>
-              <NavigationMenuContent>
+              <NavigationMenuContent className="left-auto right-0 origin-top-right">
                 <ul className="grid w-[400px] gap-2 md:w-[500px] md:grid-cols-2 lg:w-[600px]">
                   {components.map(component => (
                     <ListItem
@@ -118,7 +118,7 @@ const Header = () => {
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuTrigger>List</NavigationMenuTrigger>
-              <NavigationMenuContent>
+              <NavigationMenuContent className="left-auto right-0 origin-top-right">
                 <ul className="grid w-[300px] gap-4">
                   <li>
                     <NavigationMenuLink asChild>
@@ -151,7 +151,7 @@ const Header = () => {
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuTrigger>Simple</NavigationMenuTrigger>
-              <NavigationMenuContent>
+              <NavigationMenuContent className="left-auto right-0 origin-top-right">
                 <ul className="grid w-[200px] gap-4">
                   <li>
                     <NavigationMenuLink asChild>
@@ -169,7 +169,7 @@ const Header = () => {
             </NavigationMenuItem>
             <NavigationMenuItem>
               <NavigationMenuTrigger>With Icon</NavigationMenuTrigger>
-              <NavigationMenuContent>
+              <NavigationMenuContent className="left-auto right-0 origin-top-right">
                 <ul className="grid w-[200px] gap-4">
                   <li>
                     <NavigationMenuLink asChild>
